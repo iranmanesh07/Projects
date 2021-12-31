@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    color: #234780;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: .5vw auto;
+    box-shadow: #BBB 0 0 2px, #888 0 15px 15px -12px;
+    border-radius: 1vw;
+}
+header .a{
+    width: 25%;
+    margin: auto;
+}
+header  img{
+    border-radius: 50%;
+    border: 1px solid lightsteelblue;
+    width: 25%;
+    margin: 0 0 .5vw 0;
+}
+header h1{
+    font-size: 6vw;
+    letter-spacing: .4vw;
+    margin: 0 0 2vw 0;
+    color: darkblue;
+    text-shadow: -.2vw -.2vw  yellow, -.4vw -.4vw red, -.6vw -.6vw blue, -.8vw -.8vw green; 
+}
+header h2{
+    font-size: 4.5vw;
+    letter-spacing: .4vw;
+    color: darkblue;
+    text-shadow: -.1vw -.1vw yellow, -.2vw -.2vw red, -.3vw -.3vw blue, -.4vw -.4vw green; 
+    position: relative;
+    bottom: 2vw;
+}
+header nav{
+  margin: 1vw 0;
+  width: 100%;
+}
+header a{
+    text-decoration: none;
+    color: #333;
+    margin: 0 0 0 1vw;
+}
+#ul-w a:hover{
+    color: darkturquoise;
+    font: bolder;
+    font-size: 3vw;
+}
+
+.pos{
+    position: fixed;
+    top: 0;
+    right: .5%;
+}
+.pos a{
+    padding: 5%;
+    border-radius: 50%;
+    font-size: 6vw;
+}
+.pos .one1{
+   color: #333;
+}
+.pos .two2{
+    display: none;
+    color: yellow;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.clock{
+    display: flex;
+    justify-content: flex-end;
+    color: #0000FF;
+
+}
+.two::before,
+.two::after{
+    content: ":";
+}
+@font-face {
+    font-family: "FuzzyBubblesROB";
+    src: url("fonts/FuzzyBubblesROB.otf") format("otf"),
+     url("fonts/FuzzyBubblesROB.woff") format("woff"),
+     url("fonts/FuzzyBubblesROB.ttf") format("ttf");
+}
+@font-face {
+    font-family: "f-a";
+    src: url("fonts/f-a.otf") format("eot"),
+    url("fonts/f-a.woff") format("woff"),
+    url("fonts/f-a.ttf") format("ttf");
+}
+.welcome{
+    color:#FA8072; 
+  /*  color: goldenrod; */
+    font-family: "FuzzyBubblesROB";
+    text-align: center;
+    font-size: 6vw;
+}
+aside h3{
+    padding-left: 3px;
+    color: #FF0000;
+}
+aside{
+    width: 92%;
+    line-height: 1.5;
+    margin: 4vw auto;
+    padding: 1vw;
+    text-align: left;
+    box-shadow: #BBB 0 0 2px, #888 0 15px 15px -12px;
+    border-radius: 1vw;
+}
+.fa-one{
+    display: black;
+    margin: auto;
+    width: 100%;
+}
+.fa-two{
+    display: none;
+}
+.image-about img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.content-progress{
+    width: 92%;
+    border-radius: 1vw;
+    margin: 2vw auto;
+    padding: 1vw;
+    box-shadow: #BBB 0 0 2px, #888 0 15px 15px -12px;
+}
+.progress-div{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.origen{
+    width: 80%;
+}
+.header-progress{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.progress{
+    width: 100%;
+    height: 4vw;
+  background: #fff;
+    border: 1px solid #545;
+    border-radius: 4.5vw;
+    box-shadow: #BBB 0 0 2px, #888 0 15px 15px -12px;
+    margin-bottom: 20px;
+}
+.prog{
+    height: 4vw;
+  background: lightskyblue;
+  background-color: #FF1493;
+    border-radius: 4.5vw;
+}
+.prog-html{
+    width: 60%;
+}
+.prog-css{
+    width: 50%;
+}
+.prog-js{
+    width: 25%;
+}
+.prog-py{
+    width: 10%;
+}
+.prog-Photoshop{
+    width: 80%;
+}
+.prog-AfterEffects{
+    width: 70%;
+}
+.content-progress h3{
+    color: #FF0000;
+    width: 65%;
+}
+.contact h3{
+    color: #FF0000;
+    padding-left: 3px;
+}
+.contact h4{
+    text-align: left;
+    margin: 2vw 0 2vw 5vw;
+}
+.contact h4 span{
+    margin-left: 2vw;
+}
+.contact{
+    width: 92%;
+    border-radius: 1vw;
+    box-shadow: #BBB 0 0 2px, #888 0 15px 15px -12px;
+    margin: 0 auto;
+    padding: 1vw;
+}
+.contact input, textarea, button{
+   display: block;
+   width: 80%;
+   margin: 4vw auto;
+   padding: 1vw 0 0 0;
+}
+.contact input{
+    border: none;
+    border-bottom: 1px solid #555;
+}
+.contact input:focus{
+   border: none;
+   outline: none;
+   border-radius: 0;
+   border-bottom: 1px solid #444;
+}
+.contact textarea{
+    height: 20vw;
+    border: 1px solid #555;
+}
+.contact button{
+    width: 20%;
+}
+.contact .icon{
+    display: block;
+    display: flex;
+    justify-content: center;
+    font-size: 5vw;
+}
+.contact .icon a{
+    margin: 0 1vw;
+}
+.contact .icon a i:hover{
+   font-size: 6vw;
+}
+footer{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 2vw;
+    font-family: "FuzzyBubblesROB";
+}
+@media screen and (min-width: 480px) {
+    .progress-div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .origen{
+        width: 45%;
+        margin: 0 1vw;
+    }
+    .progress, .prog{
+        height: 2.5vw;
+    }
+}
+@media screen and (min-width: 800px) {
+    header img{
+        width: 18%;
+    }
+    header h1, header h2{
+        font-size: 4vw;
+    }
+    .content{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    aside{
+        width: 46%;
+        margin: 0;
+        margin: auto;
+    }
+    .fa-one{
+        display: none;
+    }
+    .fa-two{
+        display: block;
+        width: 46%;
+        
+    }
+    .image-about img{
+        display: block;
+        margin: auto;
+        width: 30vw;
+        height: 30vw;
+    }
+    .progress-div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .origen{
+        width: 45%;
+        margin: 0 1vw;
+    }
+    .progress, .prog{
+        height: 2vw;
+    }
+    .h-box{
+        font-size: 4vw;
+    }
+}
+@media screen and (orientation: landscape)  {
+    .welcome{
+        font-size: 4vw;
+    }
+}
