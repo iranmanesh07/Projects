@@ -51,7 +51,7 @@ header a{
 #ul-w a:hover{
     color: darkturquoise;
     font: bolder;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 .pos{
@@ -253,6 +253,8 @@ footer{
     font-family: "FuzzyBubblesROB";
 }
 @media screen and (min-width: 480px) {
+     #ul-w a:hover{
+         font-size: 3vw;
     .progress-div{
         display: flex;
         flex-wrap: wrap;
