@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: vazir;
+}
+@font-face {
+  font-family: vazir;
+  src: url("fonts/vazir.eot") format("eot"),
+  url("fonts/vazir.woff") format("woff"),
+  url("fonts/vazir.ttf") format("ttf");
+}
+
+.header .top {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 15px;
+}
+.header-content-left {}
+.header-content-right .menu {
+  transition: transform .5s;
+}
+.line {
+  width: 25px;
+  height: 4px;
+  background: black;
+  transform-origin: right;
+}
+.line-2 {
+  margin: 5px 0;
+}
+.checkbox:checked ~ .navbar-navigtion {
+  display: flex;
+}
+.checkbox:checked ~ .top .header-content-right .menu {
+  transform: rotateZ(90deg);
+}
+.checkbox:checked ~ .top .header-content-right .line-1{
+   transform: rotateZ(-40deg);
+}
+.checkbox:checked ~ .top .header-content-right .line-2 {
+  opacity: 0;
+}
+.checkbox:checked ~ .top .header-content-right .line-3 {
+  transform: rotateZ(40deg);
+}
+
+.navbar-navigtion {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  width: 95%;
+  margin: 0 auto 10px auto;
+}
+.navbar-navigtion a {
+  color: #2196F3;
+  text-decoration: none;
+  padding: 5px;
+}
+.navbar-navigtion a:hover {
+  background-color: #2196F3;
+  color: white;
+}
+
+.main {
+  width: 100%;
+  background-image: url("image/background.jpg");
+
+}
+.main p {
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.box-btn {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.box-btn button {
+  text-align: center;
+  width: 14%;
+  background-color: #2196F2;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px 20px 10px;
+  color: white;
+  padding: 10px;
+
+}
+
+
+   /*  مربوط به رسپانسیو*/
+    
+@media screen and (max-width: 760px){
+  .hamburger-menu{
+    display: back;
+  }
+  .box-btn button {
+    width: 40%;
+  }
+  .header .top {
+    padding: 10px;
+  }
+}
